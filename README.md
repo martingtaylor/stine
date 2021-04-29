@@ -1,6 +1,6 @@
 # STINE - Some Times Itunes is Not Enough
 
-Contents
+**Contents**
 . Description of the project.
 
 
