@@ -57,8 +57,7 @@ Revision History
 
 
 ## Risk Assessment
-![STINE ERD](https://github.com/martingtaylor/stine/blob/main/STINE%20ERD.png)
-
+![STINE ERD](https://github.com/martingtaylor/stine/blob/main/STINE%20Risk%20Assessment.PNG)
 
 ## Application design description
 * Main Album Table
