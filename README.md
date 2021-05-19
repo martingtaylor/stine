@@ -31,3 +31,12 @@ Revision History
 
 
 ## Risk Assessment
+
+## Application design description
+* Main Album Table
+* Media Type
+* Category
+* Composer
+* Label
+* HTML Framework
+
