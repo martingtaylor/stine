@@ -38,7 +38,7 @@ Following normalisation, the data elements where grouped in a number of seperate
 * CATEGORIES - A list of musical type, such as Jazz, Classical, Country, etc.
 
 All these tables form a Many-to-One relationship with the central Ablum table:
-|Table      |Relationsship                                     |
+|Table      |Relationship                                      |
 |-----------|--------------------------------------------------|
 |COMPOSERS  |One composers relates to none, one or many Albums |
 |MEDIA_TYPES|One Media Type relates to none, one or many Albums|
