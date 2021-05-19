@@ -3,6 +3,7 @@
 ## Contents
 * Description of the project.
 * ERD
+* Risk Assessment
 
 ## Description of the Project
 The STINE project is a hobbyist database for recording details of a music collection. 
@@ -24,3 +25,9 @@ The system records details of the Album, including:
 
 
 ## ERD 
+Current Design
+
+Revision History
+
+
+## Risk Assessment
