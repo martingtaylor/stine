@@ -52,8 +52,19 @@ The following ERD diagram shows the originally intended structure:
 
 
 
-
-Revision History
+### Revision History:###
+It should be noted that due to time constraits a number of non-key data items have been dropped from the final implementation.
+These include:
+|Drop Field          |
+|--------------------|
+|Artist              |
+|Conductor           | 
+|Data Recorded       |
+|Digital Analog      |
+|Compilation Flag    |
+|Run Time            |
+All of the above fields are fields within the Albums tables and can ommited without affecting the overal design or function.
+All these fields can be easily be added to the application, time permitting
 
 
 ## Risk Assessment
