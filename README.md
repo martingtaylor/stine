@@ -48,7 +48,7 @@ All these tables form a Many-to-One relationship with the central Ablum table:
 As can be seen, the creates a simple star structure with the Albums table in the centre.
 
 The following ERD diagram shows the originally intended structure:
-![STINE ERD](https://github.com/martingtaylor/stine/blob/main/STINE%20ERD.png)
+![STINE ERD1](https://github.com/martingtaylor/stine/blob/main/STINE%20ERD.png)
 
 
 
@@ -65,11 +65,13 @@ These include:
 |Run Time            |
 
 All of the above fields are fields within the Albums tables and can ommited without affecting the overal design or function.
-All these fields can be easily be added to the application, time permitting
+All these fields can be easily be added to the application, time permitting.
 
+Removing the unimplemented fields gives a revised ERD diagram:
+![STINE ERD2](https://github.com/martingtaylor/stine/blob/main/stine2.png)
 
 ## Risk Assessment
-![STINE ERD](https://github.com/martingtaylor/stine/blob/main/STINE%20Risk%20Assessment.PNG)
+![RISK Assessment](https://github.com/martingtaylor/stine/blob/main/STINE%20Risk%20Assessment.PNG)
 
 ## Application design description
 * Main Album Table
