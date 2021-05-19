@@ -14,9 +14,8 @@ of interest, and based of these requirements design a simple/easy to use GUI and
 
 
 ## ERD Description of the Project
-The STINE project is a hobbyist database for recording details of a music collection. 
-
-The system records details of the Album, including:
+Following formal meetings with potiental users of STINE, a number of key data elements where identified as useful 
+to a collector of audio media, these included:
 * Name/title of Album
 * Composer
 * Artist
@@ -30,6 +29,13 @@ The system records details of the Album, including:
 * Number of disks
 * Duration
 * Digital/Analog
+
+Following normalisation, the data elements where grouped in a number of seperate tables:
+* ALBUM - the central table contain either base data or links to other tables.
+* COMPOSERS - A table containing the names of individual composers. 
+* MEDIA_TYPES - A list of the basic media types: C.D., Vinyl, Digit. This table is considered non changing.
+* LABELS - A list of media publishers.
+* CATEGORIES - A list of musical type, such as Jazz, Classical, Country, etc.
 
 
 ## ERD 
