@@ -34,6 +34,7 @@ The system records details of the Album, including:
 
 ## ERD 
 Current Design
+![egg](https://qa-courseware-images.s3.eu-west-2.amazonaws.com/markdown/links_images/000.jpeg)
 
 Revision History
 
