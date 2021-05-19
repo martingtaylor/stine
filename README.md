@@ -45,10 +45,9 @@ All these tables form a Many-to-One relationship with the central Ablum table:
 |LABELS     |One Label relates to none, one or many Albums     |
 |CATEGORIES |One category relates to none, one or many Albums  |
 
+As can be seen, the creates a simple star structure with the Albums table in the centre.
 
-
-## ERD 
-Current Design
+The following ERD diagram shows the originally intended structure:
 ![STINE ERD](https://github.com/martingtaylor/stine/blob/main/STINE%20ERD.png)
 
 
