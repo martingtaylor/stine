@@ -1,11 +1,19 @@
 # STINE - Some Times Itunes is Not Enough
 
 ## Contents
-* Description of the project.
-* ERD
+* Brief Overview of the projet
+* ERD and Detailed discussion on the data stored
 * Risk Assessment
+* Application design and description
+* CD/CI Intergation - Using Jenkins to install from GITHUB and executing the application
 
-## Description of the Project
+## Brief
+The following is a brief outling of the STINE application. STINE is intend to be a simple to use database, that
+allowes audiophile to record basic information on their audio collection. The project indentified key data elements
+of interest, and based of these requirements design a simple/easy to use GUI and underlying database structure.
+
+
+## ERD Description of the Project
 The STINE project is a hobbyist database for recording details of a music collection. 
 
 The system records details of the Album, including:
@@ -44,4 +52,5 @@ Revision History
 
 ## Database design considerations
 
+## CD / CI Integration
 
