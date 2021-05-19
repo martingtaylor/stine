@@ -40,3 +40,8 @@ Revision History
 * Label
 * HTML Framework
 
+## Application Deployment Structure
+
+## Database design considerations
+
+
