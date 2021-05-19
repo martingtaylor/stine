@@ -37,10 +37,22 @@ Following normalisation, the data elements where grouped in a number of seperate
 * LABELS - A list of media publishers.
 * CATEGORIES - A list of musical type, such as Jazz, Classical, Country, etc.
 
+All these tables form a Many-to-One relationship with the central Ablum table:
+|Table      |Relationsship                                     |
+|-----------|--------------------------------------------------|
+|COMPOSERS  |One composers relates to none, one or many Albums |
+|MEDIA_TYPES|One Media Type relates to none, one or many Albums|
+|LABELS     |One Label relates to none, one or many Albums     |
+|CATEGORIES |One category relates to none, one or many Albums  |
+
+
 
 ## ERD 
 Current Design
 ![STINE ERD](https://github.com/martingtaylor/stine/blob/main/STINE%20ERD.png)
+
+
+
 
 Revision History
 
