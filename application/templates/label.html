@@ -1,0 +1,27 @@
+{% extends 'main.html' %}
+{% block body %}
+<h2>Labels</h2>
+    <div class='form'>
+        <form method='GET' action=''>
+            {{ form.hidden_tag() }}
+
+            <table border=1>
+            <tr><th>Labels</th></tr>
+            {% for l in lab_list %}
+                <tr>
+                    <td width=200px><a href="/labeledit/{{ l.id }}">{{ l.name }}</a></td>
+                </tr>
+            </p>
+            {% endfor %}
+            </table>
+        </form>
+        <form method='POST' action=''>
+            {{ form.name.label }}
+            {{ form.name }}
+            {{ form.submit }}
+        </form>
+        <br>
+        <b><i>{{ message }}</i></b>
+    </div>
+
+{% endblock body %}

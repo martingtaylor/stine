@@ -1,0 +1,27 @@
+{% extends 'main.html' %}
+{% block body %}
+<h2>Composers</h2>
+    <div class='form'>
+        <form method='GET' action=''>
+            {{ form.hidden_tag() }}
+
+            <table border=1>
+            <tr><th>Composer</th></tr>
+            {% for c in composer_list %}
+                <tr>
+                    <td width=200px><a href="/composeredit/{{ c.id }}">{{ c.name }}</a></td>
+                </tr>
+            </p>
+            {% endfor %}
+            </table>
+        </form>
+        <form method='POST' action=''>
+            {{ form.name.label }}
+            {{ form.name }}
+            {{ form.submit }}
+        </form>
+        <br>
+        <b><i>{{ message }}</i></b>
+    </div>
+
+{% endblock body %}

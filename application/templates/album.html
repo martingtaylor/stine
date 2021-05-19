@@ -1,0 +1,49 @@
+{% extends 'main.html' %}
+{% block body %}
+<h2>Albums</h2>
+    <div class='form'>
+        <form method='GET' action=''>
+            {{ form.hidden_tag() }}
+
+            <table border=1>
+            <tr><th>Album</th></tr>
+            {% for a in album_list %}
+                <tr>
+                    <td width=300px><a href="/albumedit/{{ a.id }}">{{ a.name }}</a></td>
+                </tr>
+            </p>
+            {% endfor %}
+            </table>
+        </form>
+        <form method='POST' action=''>
+            <h3>Album Details</h3>
+            <table>
+                <tr>
+                    <td>{{ form.name.label }}</td><td>{{ form.name }}</td>
+                </tr>
+                <tr>
+                    <td>{{ form.mediatype.label }}</td><td>{{ form.mediatype }}</td>
+                </tr>
+                <tr>
+                    <td>{{ form.composer.label }}</td><td>{{ form.composer }}</td>
+                </tr>
+                <tr>
+                    <td>{{ form.media_label.label }}</td><td>{{ form.media_label }}</td>
+                </tr>
+                <tr>
+                    <td>{{ form.music_category.label }}</td><td>{{ form.music_category }}</td>
+                </tr>
+                <tr>
+                    <td>{{ form.number_of_tracks.label }}</td><td>{{ form.number_of_tracks }}</td>
+                </tr>
+                <tr>
+                    <td>{{ form.number_of_disks.label }}</td><td>{{ form.number_of_disks }}</td>
+                </tr>
+            </table>
+            {{ form.submit }}
+        </form>
+        <br>
+        <b><i>{{ message }}</i></b>
+    </div>
+
+{% endblock body %}

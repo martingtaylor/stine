@@ -1,0 +1,16 @@
+{% extends 'main.html' %}
+{% block body %}
+<h2>Index</h2>
+<div class='form'>
+    <form method='POST' action=''>
+        <table border=0>
+        <tr><th>Album Name</th></tr>
+        {% for ad in album_list %}
+            <tr>
+                <td><a href="album_update/{{ ad.id }}">{{ ad.name }}</a></td>
+            </tr>
+        </p>
+        {% endfor %}
+        </table>
+    </form>
+{% endblock body %}
