@@ -79,7 +79,7 @@ These include:
 |Run Time            |
 
 All of the above fields are fields within the Albums tables and can ommited without affecting the overal design or function.
-All these fields can be easily be added to the application, time permitting.
+All these fields could be easily be added to the application, time permitting.
 
 Removing the unimplemented fields gives a revised ERD diagram:
 ![STINE ERD2](https://github.com/martingtaylor/stine/blob/main/stine2.png)
