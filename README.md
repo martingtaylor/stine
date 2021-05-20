@@ -93,12 +93,19 @@ To achieve a reliable WEB based, database application using PYTHON, the followin
 |WTForms   |WEB Forms Management software|
 |JINGA2    |WEB/PYTHON interaction framework|
 
-* Main Album Table
-* Media Type
-* Category
-* Composer
-* Label
-* HTML Framework
+It was desided to keep the application user exprienance as simple as possible, using the same working methodology to all interfaces. The number of interfaces should be mininal, with easy context switching using a standard menu available on each interface screen.
+
+The application included a seperate interface for each data table defined in the ERD. This includes:
+* The main Album table
+* The music category table
+* The Composer table
+* The Pusblisher Label
+
+NOTE: the Media Type table is created is not alterable by design, and is populated when the database is deployed.
+
+In addition to the interfaces, a simple menu system is included to context switch to each of the screens. The menu is imbedded with the main.html page, which includes a JINGA2 block, inwhich all other html pages are embedded. This approah makes the menu available to all interfaces.
+
+
 
 ## Risk Assessment
 An initial Risk Assessment was completed on project commencement:
