@@ -86,7 +86,7 @@ Removing the unimplemented fields gives a revised ERD diagram:
 
 ## Application design description
 ### Overview
-The techincal brief defined a number of tools/techniques/frameworks to employ:
+The techincal brief defined a number of tools/techniques/frameworks to employ on this project:
 * Cloud based production system: GCP
 * Databases: SQLITE for Dev, MySQL for Prod
 * WEB Interface
