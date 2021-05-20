@@ -131,6 +131,8 @@ Jenkins "Build" was used to :
 2. On execution - download the latest STINE GIT main branch and deploy to a Jenkins Workspace.
 3. Set the Database connection string (based on the choice made above) and store to an environmental variable.
 
+![JENKINSBuild](images/STINE_JENKINS_BUILD.PNG)
+
 4. 
 
 ## Project Tracking
