@@ -227,4 +227,5 @@ Revision History: Since then the assessment has been revised on a number of occa
 ## Testing
 
 ## Conclusions
+The STINE application does not run as specified, in that the main Album GUI does not refresh the select field items with the correct item when reloading previously saved data. I feek confident that this problem could be solved given more time and experimentation. However, the other tables (Composer, Label and Category) do all demostrate the succesfully perform standard CRUD actions.
 
