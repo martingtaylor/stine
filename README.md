@@ -230,7 +230,7 @@ I created a series of PYTEST / FLASK unit tests that exercised both GET and POST
 Happy to say we achieve an overal coverage of 72%
 ![PYTEST](images/STINE_PYTEST.PNG)
 
-I PYTEST code can be viewed: [PYTEST CODE]()
+I PYTEST code can be viewed: [PYTEST CODE](https://github.com/martingtaylor/stine/blob/main/test_app.py)
 
 ## Conclusions
 The STINE application does not run as specified, in that the main Album GUI does not refresh the select field items with the correct item when reloading previously saved data. I feek confident that this problem could be solved given more time and experimentation. However, the other tables (Composer, Label and Category) do all demostrate the succesfully perform standard CRUD actions.
