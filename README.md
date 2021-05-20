@@ -78,10 +78,18 @@ Removing the unimplemented fields gives a revised ERD diagram:
 ![STINE ERD2](https://github.com/martingtaylor/stine/blob/main/stine2.png)
 
 ## Application design description
-Techincal framework was given:
-* Cloud based production system: GCP, MySQL, WEB Interface
-* Development Tools: 
-** PYTHON
+The techincal brief defined a number of tools/techniques/frameworks to employ:
+* Cloud based production system: GCP
+* Databases: SQLITE for Dev, MySQL for Prod
+* WEB Interface
+* Development Language: PYTHON
+* Interface: WEB using HTML
+
+To achieve a reliable WEB based, database application using PYTHON, the following frameworks where selected for reliablity and robustness:
+|SQLAchemny|A PYTHON base interface to backend database layers|
+|FLASK     |WEB Services framework for PYTHON|
+|WTForms   |WEB Forms Management software|
+|JINGA2    |WEB/PYTHON interaction framework|
 
 * Main Album Table
 * Media Type
