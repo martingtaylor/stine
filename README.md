@@ -226,7 +226,7 @@ Revision History: Since then the assessment has been revised on a number of occa
 
 ## Testing
 I created a series of PYTEST / FLASK unit tests that exercised both GET and POST for each main and edit routes. All screens are tested by looking for dummy data created in the tear down, (for example the Composers table contains a single entry "Test Composer", the labels "Test Label", the Catergories "Test Category"), being returned by a call to either the full list, or the via the id supplied. All test looks for a 200 return code (got the WEB page back successfully) and the presents of the expect text.
-
+![PYTEST](images/STINE_PYTEST.PNG)
 
 
 ## Conclusions
