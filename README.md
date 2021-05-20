@@ -130,6 +130,7 @@ Jenkins "Build" was used to :
 1. Query the user to select on the choice of MYSQL or SQLITE database types and whether to recreate the database.
 2. On execution - download the latest STINE GIT main branch and deploy to a Jenkins Workspace.
 3. Set the Database connection string (based on the choice made above) and store to an environmental variable.
+
 4. 
 
 ## Project Tracking
