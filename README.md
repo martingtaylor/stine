@@ -112,6 +112,8 @@ NOTE: the Media Type table is created is not alterable by design, and is populat
 
 In addition to the interfaces, a simple menu system is included to context switch to each of the screens. The menu is imbedded with the main.html page, which includes a JINGA2 block, inwhich all other html pages are embedded. This approah makes the menu available to all interfaces.
 
+The following directory structuer was used to host the application:
+![DIR](https://github.com/martingtaylor/stine/blob/main/STINE_DIR_STRUCTURE.PNG)
 
 
 ## CD / CI Integration
@@ -119,7 +121,7 @@ The application was developed and deployed using the following CI methodology:
 1. A public GITHUB repository was created for the STINE account containing this README.md
 2. The repository was cloned to the development PC.
 3. Microsoft Visual Studio Code 1.56 was connected to the STINE GIT repository.
-4. The following structure was used to host the application
+4. The following directory structure was used to host the application
 
 
 ## Project Tracking
