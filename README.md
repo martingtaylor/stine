@@ -126,18 +126,21 @@ The application was developed and deployed using the following CI methodology:
 4. During the development cycle, regular commits where made to the main branch repo.
 
 ### Jenkins Deployment:
-Jenkins "Build" was used to :
+When Jenkins "Build" is invoked:
+
+![JENKINSBuild](images/STINE_JENKINS_BUILD.PNG)
+
 1. Query the user to select on the choice of MYSQL or SQLITE database types and whether to recreate the database.
 2. On execution - download the latest STINE GIT main branch and deploy to a Jenkins Workspace.
 3. Set the Database connection string (based on the choice made above) and store to an environmental variable.
-
-![JENKINSBuild](images/STINE_JENKINS_BUILD.PNG)
 
 **NOTE:** It should be noted that 3 lines in the build relating to the installation (requirements, pymysql, gunicorn) have been
 commented out. This was due to these items crashing the build process. These items where installed on the command line using sudo
 to get around this problem, and I will investigate this issue later.
 
-4. 
+4. Check the **CREATEDB** environmental variable, and if set to true, run the **CREATE.PY** program to drop and recreate the database on the selected database.
+5. Invoke the **GUNICORN** WEB Host and execute the application.
+
 
 ## Project Tracking
 The JIRA Project Management tool was used to track and manage the application during the development, testing deployment cycle:
