@@ -133,6 +133,10 @@ Jenkins "Build" was used to :
 
 ![JENKINSBuild](images/STINE_JENKINS_BUILD.PNG)
 
+**NOTE:** It should be noted that 3 lines in the build relating to the installation (requirements, pymysql, gunicorn) have been
+commented out. This was due to these items crashing the build process. These items where installed on the command line using sudo
+to get around this problem, and I will investigate this issue later.
+
 4. 
 
 ## Project Tracking
@@ -147,6 +151,7 @@ The JIRA configuration allows:
 ## Risk Assessment
 An initial Risk Assessment was completed on project commencement:
 ![RISK Assessment](https://github.com/martingtaylor/stine/blob/main/STINE%20Risk%20Assessment.PNG)
+
 
 Revision History: Since then the assessment has been revised on a number of occassions:
 |Date      |Item|Title                      |Description|New Likihood|
