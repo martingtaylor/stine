@@ -71,7 +71,15 @@ Removing the unimplemented fields gives a revised ERD diagram:
 ![STINE ERD2](https://github.com/martingtaylor/stine/blob/main/stine2.png)
 
 ## Risk Assessment
+An initial Risk Assessment was completed on project commencement:
 ![RISK Assessment](https://github.com/martingtaylor/stine/blob/main/STINE%20Risk%20Assessment.PNG)
+
+Since then the assessment has been revised on a number of occassions:
+|Date      |Item|Title                      |Description|
+|----------|----|---------------------------|-----------|
+|03/05/2021|4   |Legal Constraints          |As the system was for private and non profit use only and does not contain actual audio media data, this can be dismissed.|
+|19/05/2021|2   |Lack of technical Knowledge|Due to lack of techincal knowledge, was unable to default selection boxs to stored values.                                |
+|19/05/2021|5   |System failes User Test    |Due to select fields not default, user testing will fail                                                                  |
 
 ## Application design description
 * Main Album Table
