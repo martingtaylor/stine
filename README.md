@@ -141,6 +141,7 @@ to get around this problem, and I will investigate this issue later.
 4. Check the **CREATEDB** environmental variable, and if set to true, run the **CREATE.PY** program to drop and recreate the database on the selected database.
 5. Invoke the **GUNICORN** WEB Host and execute the application.
 
+![JENKINSBuild](images/STINE_JENKINS_LOGS.PNG)
 
 ## Project Tracking
 The JIRA Project Management tool was used to track and manage the application during the development, testing deployment cycle:
