@@ -185,13 +185,11 @@ The application was developed and deployed using the following CI methodology:
 ### Jenkins Deployment:
 When Jenkins "Build" is invoked:
 
-![JENKINSBuild](images/STINE_JENKINS_BUILD.PNG)
 
-1. Query the user to select on the choice of MYSQL or SQLITE database types and whether to recreate the database.
 
+1. Jenkins query the user to select on the choice of MYSQL or SQLITE database types and whether to recreate the database.
 ![JENKINSRun](images/STINE_JENKINS_RUN.PNG)
-
-3. On execution - download the latest STINE GIT main branch and deploy to a Jenkins Workspace.
+3. On execution - Jenkins downloads the latest STINE GIT main branch and deploy to a Jenkins Workspace.
 4. Set the Database connection string (based on the choice made above) and store to an environmental variable.
 
 **NOTE:** It should be noted that 3 lines in the build relating to the installation (requirements, pymysql, gunicorn) have been
@@ -200,6 +198,8 @@ to get around this problem, and I will investigate this issue later.
 
 4. Check the **CREATEDB** environmental variable, and if set to true, run the **CREATE.PY** program to drop and recreate the database on the selected database.
 5. Invoke the **GUNICORN** WEB Host and execute the application.
+
+![JENKINSBuild](images/STINE_JENKINS_BUILD.PNG)
 
 The following log was generated once during the Build process:
 
