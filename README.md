@@ -125,7 +125,12 @@ The routes.py is executed on receipt of a WEB requests and drives the applicatio
 1. _interface_ route which drives the listing of that table (R - of CRUD) and the addition function (C - of CRUD). This screen contains a hyperlink on each displayed item, which links to the _interface-edit_ route.
 2. _interface-edit_ route appears much like the _interface_ but offers the user the ability to change the selected item (U - of CRUD), or delete (D of CRUD)
 
-
+|Route   |Route for Read/Add|Route for Update/Delete|
+|--------|------------------|-----------------------|
+|Album   |/ or index        |albumedit              |
+|Composer|composer          |composeredit           |
+|Label   |label             |labeledit              |
+|Category|category          |category               |
 
 
 
