@@ -185,8 +185,11 @@ When Jenkins "Build" is invoked:
 ![JENKINSBuild](images/STINE_JENKINS_BUILD.PNG)
 
 1. Query the user to select on the choice of MYSQL or SQLITE database types and whether to recreate the database.
-2. On execution - download the latest STINE GIT main branch and deploy to a Jenkins Workspace.
-3. Set the Database connection string (based on the choice made above) and store to an environmental variable.
+
+![JENKINSRun](images/STINE_JENKINS_RUN.PNG)
+
+3. On execution - download the latest STINE GIT main branch and deploy to a Jenkins Workspace.
+4. Set the Database connection string (based on the choice made above) and store to an environmental variable.
 
 **NOTE:** It should be noted that 3 lines in the build relating to the installation (requirements, pymysql, gunicorn) have been
 commented out. This was due to these items crashing the build process. These items where installed on the command line using sudo
