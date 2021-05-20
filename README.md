@@ -225,9 +225,12 @@ Revision History: Since then the assessment has been revised on a number of occa
 
 
 ## Testing
-I created a series of PYTEST / FLASK unit tests that exercised both GET and POST for each main and edit routes. All screens are tested by looking for dummy data created in the tear down, (for example the Composers table contains a single entry "Test Composer", the labels "Test Label", the Catergories "Test Category"), being returned by a call to either the full list, or the via the id supplied. All test looks for a 200 return code (got the WEB page back successfully) and the presents of the expect text.
+I created a series of PYTEST / FLASK unit tests that exercised both GET and POST for each main and edit routes. All screens are tested by looking for dummy data (for example the Composers table contains a single entry "Test Composer", the labels "Test Label", the Catergories "Test Category") created after the test routine starts, that is being returned by a call to either the full list, or the via the id supplied. All test looks for a 200 return code (got the WEB page back successfully) and the presents of the expect text.
+
+Happy to say we achieve an overal coverage of 72%
 ![PYTEST](images/STINE_PYTEST.PNG)
 
+I PYTEST code can be viewed: [PYTEST CODE]()
 
 ## Conclusions
 The STINE application does not run as specified, in that the main Album GUI does not refresh the select field items with the correct item when reloading previously saved data. I feek confident that this problem could be solved given more time and experimentation. However, the other tables (Composer, Label and Category) do all demostrate the succesfully perform standard CRUD actions.
