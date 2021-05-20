@@ -7,6 +7,8 @@
 * CD/CI Intergation - Using Jenkins to install from GITHUB and executing the application
 * Project Tracking
 * Risk Assessment
+* Testing
+* Conclusions
 
 
 ## Brief
@@ -134,4 +136,8 @@ Revision History: Since then the assessment has been revised on a number of occa
 |19/05/2021|2   |Lack of technical Knowledge|Due to lack of techincal knowledge, was unable to default selection boxs to stored values.                                |Very Probable|
 |19/05/2021|5   |System failes User Test    |Due to select fields not default, user testing will fail                                                                  |Very Probable|
 
+
+## Testing
+
+## Conclusions
 
