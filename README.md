@@ -8,6 +8,7 @@
 * Project Tracking
 * Risk Assessment
 * Testing
+* Applications screen shots
 * Conclusions
 
 
@@ -231,6 +232,17 @@ Happy to say we achieve an overal coverage of 72%
 ![PYTEST_RESULTS](images/STINE_PYTEST.PNG)
 
 I have included a link to the PYTEST code: [PYTEST.PY CODE](https://github.com/martingtaylor/stine/blob/main/test_app.py)
+
+## Application Screen Shots
+
+![Album Screen](images/STINE_SCREEN_1.PNG)
+
+![Composer Screen](images/STINE_SCREEN_2.PNG)
+
+![Label Screen](images/STINE_SCREEN_3.PNG)
+
+![Category Screen](images/STINE_SCREEN_4.PNG)
+
 
 ## Conclusions
 The STINE application does not run as specified, in that the main Album GUI does not refresh the select field items with the correct item when reloading previously saved data. I feek confident that this problem could be solved given more time and experimentation. However, the other tables (Composer, Label and Category) do all demostrate the succesfully perform standard CRUD actions.
