@@ -125,12 +125,29 @@ The routes.py is executed on receipt of a WEB requests and drives the applicatio
 1. _interface_ route which drives the listing of that table (R - of CRUD) and the addition function (C - of CRUD). This screen contains a hyperlink on each displayed item, which links to the _interface-edit_ route.
 2. _interface-edit_ route appears much like the _interface_ but offers the user the ability to change the selected item (U - of CRUD), or delete (D of CRUD)
 
-|Route   |Route for Read/Add|Route for Update/Delete|
-|--------|------------------|-----------------------|
-|Album   |/ or index        |albumedit              |
-|Composer|composer          |composeredit           |
-|Label   |label             |labeledit              |
-|Category|category          |category               |
+|Interface|Route for Read/Add|Route for Update/Delete|
+|---------|------------------|-----------------------|
+|Album    |/ or index        |albumedit              |
+|Composer |composer          |composeredit           |
+|Label    |label             |labeledit              |
+|Category |category          |category               |
+
+All Routes for Read/Add function is the same manner, as do all Update/Deletes.
+
+#### Read/Add:
+* For GET and POST methods - query the relevant table and create a list of data items
+
+* For POST mehtods only (Add and new item): 
+1. Collect the data from the form. Clear the error message.
+2. Check the relevant table and see if it already exists. And if not:
+3. Add the new item to the table and refresh the all data list (now includes new item).
+4. If item already exists - set the appropriate error message.
+
+* Finally - render the appropriate HTML page with the new all data list and error message.
+
+### Update/Delete:
+
+
 
 
 
