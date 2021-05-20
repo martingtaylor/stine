@@ -67,6 +67,7 @@ The following ERD diagram shows the originally intended structure:
 
 ### Revision History:
 It should be noted that due to time constraits a number of non-key data items have been dropped from the final implementation.
+
 These include:
 |Drop Field          |
 |--------------------|
