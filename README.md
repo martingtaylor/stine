@@ -115,6 +115,12 @@ In addition to the interfaces, a simple menu system is included to context switc
 
 
 ## CD / CI Integration
+The application was developed and deployed using the following CI methodology:
+1. A public GITHUB repository was created for the STINE account containing this README.md
+2. The repository was cloned to the development PC.
+3. Microsoft Visual Studio Code 1.56 was connected to the STINE GIT repository.
+4. The following structure was used to host the application
+
 
 ## Project Tracking
 The JIRA Project Management tool was used to track and manage the application during the development, testing deployment cycle:
