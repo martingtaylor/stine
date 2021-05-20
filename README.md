@@ -3,10 +3,10 @@
 ## Contents
 * Brief Overview of the projet
 * ERD and Detailed discussion on the data stored
-* Risk Assessment
 * Application design and description
 * CD/CI Intergation - Using Jenkins to install from GITHUB and executing the application
 * Project Tracking
+* Risk Assessment
 
 
 ## Brief
@@ -109,6 +109,21 @@ In addition to the interfaces, a simple menu system is included to context switc
 
 
 
+## Application Deployment Structure
+
+## Database design considerations
+
+## CD / CI Integration
+
+## Project Tracking
+The JIRA Project Management tool was used to track and manage the application during the development, testing deployment cycle:
+![JIRA](https://github.com/martingtaylor/stine/blob/main/STINE_JIRA.PNG)
+The JIRA configuration allows:
+* Management of the "To-Do list" - user stories, summarising "Who Wants", "What they Want" and "What they except"
+* The "In progress" - containing items currently being worked on, or blocked items.
+* The "Done List" - Items that have been completed and tested, or approved.
+
+
 ## Risk Assessment
 An initial Risk Assessment was completed on project commencement:
 ![RISK Assessment](https://github.com/martingtaylor/stine/blob/main/STINE%20Risk%20Assessment.PNG)
@@ -121,13 +136,3 @@ Revision History: Since then the assessment has been revised on a number of occa
 |19/05/2021|5   |System failes User Test    |Due to select fields not default, user testing will fail                                                                  |Very Probable|
 
 
-
-## Application Deployment Structure
-
-## Database design considerations
-
-## CD / CI Integration
-
-## Project Tracking
-The JIRA Project Management tool was used to track and manage the application during the development, testing deployment cycle:
-![JIRA](https://github.com/martingtaylor/stine/blob/main/STINE_JIRA.PNG)
