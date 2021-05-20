@@ -235,12 +235,16 @@ I have included a link to the PYTEST code: [PYTEST.PY CODE](https://github.com/m
 
 ## Application Screen Shots
 
+### Album GUI:
 ![Album Screen](images/STINE_SCREEN_1.PNG)
 
+### Composer GUI:
 ![Composer Screen](images/STINE_SCREEN_2.PNG)
 
+### Label GUI:
 ![Label Screen](images/STINE_SCREEN_3.PNG)
 
+### Category GUI:
 ![Category Screen](images/STINE_SCREEN_4.PNG)
 
 
