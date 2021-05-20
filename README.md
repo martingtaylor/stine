@@ -117,7 +117,7 @@ In addition to the interfaces, a simple menu system is included to context switc
 
 The following directory structuer was used to host the application:
 
-![DIR](https://github.com/martingtaylor/stine/blob/main/STINE_DIR_STRUCTURE.PNG)
+![DIR](images/STINE_DIR_STRUCTURE.PNG)
 
 ### Applcation Execution
 As with most PYTHON WEB application demonstrated - application is invoked by running the app.py, which imports the code from the application directory and if running at main, invokes the __init__.py code. 
