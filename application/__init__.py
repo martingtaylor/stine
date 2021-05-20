@@ -6,8 +6,6 @@ from os import getenv
 
 app = Flask(__name__)
 
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://martin:My_Password2@34.105.132.205:3306/TESTDB' # Set the connection string to connect to the database
-
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False 
 app.config['SQLALCHEMY_DATABASE_URI'] = getenv("STINE_CONNECT")
 app.config['SECRET_KEY'] = getenv("STINE_SECRET_KEY")
