@@ -113,16 +113,24 @@ NOTE: the Media Type table is created is not alterable by design, and is populat
 In addition to the interfaces, a simple menu system is included to context switch to each of the screens. The menu is imbedded with the main.html page, which includes a JINGA2 block, inwhich all other html pages are embedded. This approah makes the menu available to all interfaces.
 
 The following directory structuer was used to host the application:
+
 ![DIR](https://github.com/martingtaylor/stine/blob/main/STINE_DIR_STRUCTURE.PNG)
 
 
 ## CD / CI Integration
+### Development Cycle:
 The application was developed and deployed using the following CI methodology:
 1. A public GITHUB repository was created for the STINE account containing this README.md
 2. The repository was cloned to the development PC.
 3. Microsoft Visual Studio Code 1.56 was connected to the STINE GIT repository.
-4. The following directory structure was used to host the application
+4. During the development cycle, regular commits where made to the main branch repo.
 
+### Jenkins Deployment:
+Jenkins "Build" was used to :
+1. Query the user to select on the choice of MYSQL or SQLITE database types and whether to recreate the database.
+2. On execution - download the latest STINE GIT main branch and deploy to a Jenkins Workspace.
+3. Set the Database connection string (based on the choice made above) and store to an environmental variable.
+4. 
 
 ## Project Tracking
 The JIRA Project Management tool was used to track and manage the application during the development, testing deployment cycle:
