@@ -135,18 +135,37 @@ The routes.py is executed on receipt of a WEB requests and drives the applicatio
 All Routes for Read/Add function is the same manner, as do all Update/Deletes.
 
 #### Read/Add:
-* For GET and POST methods - query the relevant table and create a list of data items
+* For GET and POST methods - query the relevant table and create a list of data items. Set the form type. Clear the error message.
 
 * For POST mehtods only (Add and new item): 
-1. Collect the data from the form. Clear the error message.
+1. Collect the data from the form.
 2. Check the relevant table and see if it already exists. And if not:
 3. Add the new item to the table and refresh the all data list (now includes new item).
 4. If item already exists - set the appropriate error message.
 
 * Finally - render the appropriate HTML page with the new all data list and error message.
 
-### Update/Delete:
+#### Update/Delete:
+* The item id (database primary key) is passed down to from the HTML page.
+* For GET and POST methods - query the relevant table and create a list of data items. Set the form type. Clear the error message.
 
+* For GET requests only:
+1. Look up the item from the relevant table using the given id. If found:
+2. Populate the form the database items found.
+3. If not found - error.
+
+* For POST requests only:
+1. For Save request:
+2. Locate the orignal table entry for this ID. If exists
+3. Change the data value to the one supplied from the form.
+4. Commit to database - effecting a change/update
+5. Redirect back to the non edit route.
+6. If not found - error.
+7. For Delete request:
+8. Locate the orignal table entry for this ID. If exists
+9. Delete this item from the table.
+10. Redirect back to the non edit route.
+11. If not found - error.
 
 
 
