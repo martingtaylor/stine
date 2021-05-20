@@ -8,6 +8,8 @@
 * Project Tracking
 * Risk Assessment
 * Testing
+* Applications screen shots
+* Known Issues
 * Conclusions
 
 
@@ -65,6 +67,7 @@ The following ERD diagram shows the originally intended structure:
 
 ### Revision History:
 It should be noted that due to time constraits a number of non-key data items have been dropped from the final implementation.
+
 These include:
 |Drop Field          |
 |--------------------|
@@ -76,14 +79,14 @@ These include:
 |Run Time            |
 
 All of the above fields are fields within the Albums tables and can ommited without affecting the overal design or function.
-All these fields can be easily be added to the application, time permitting.
+All these fields could be easily be added to the application, time permitting.
 
 Removing the unimplemented fields gives a revised ERD diagram:
 ![STINE ERD2](https://github.com/martingtaylor/stine/blob/main/stine2.png)
 
 ## Application design description
 ### Overview
-The techincal brief defined a number of tools/techniques/frameworks to employ:
+The techincal brief defined a number of tools/techniques/frameworks to employ on this project:
 * Cloud based production system: GCP
 * Databases: SQLITE for Dev, MySQL for Prod
 * WEB Interface
@@ -231,6 +234,25 @@ Happy to say we achieve an overal coverage of 72%
 ![PYTEST_RESULTS](images/STINE_PYTEST.PNG)
 
 I have included a link to the PYTEST code: [PYTEST.PY CODE](https://github.com/martingtaylor/stine/blob/main/test_app.py)
+
+## Application Screen Shots
+
+### Album GUI:
+![Album Screen](images/STINE_SCREEN_1.PNG)
+
+### Composer GUI:
+![Composer Screen](images/STINE_SCREEN_2.PNG)
+
+### Label GUI:
+![Label Screen](images/STINE_SCREEN_3.PNG)
+
+### Category GUI:
+![Category Screen](images/STINE_SCREEN_4.PNG)
+
+## Known Issues
+1. When an Album is retrieved to the Album GUI, the Selection drop downs do not change to the appropriate values.
+2. It is possible to save an Album with a blank name.
+
 
 ## Conclusions
 The STINE application does not run as specified, in that the main Album GUI does not refresh the select field items with the correct item when reloading previously saved data. I feek confident that this problem could be solved given more time and experimentation. However, the other tables (Composer, Label and Category) do all demostrate the succesfully perform standard CRUD actions.
