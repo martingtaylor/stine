@@ -80,6 +80,7 @@ Removing the unimplemented fields gives a revised ERD diagram:
 ![STINE ERD2](https://github.com/martingtaylor/stine/blob/main/stine2.png)
 
 ## Application design description
+### Overview
 The techincal brief defined a number of tools/techniques/frameworks to employ:
 * Cloud based production system: GCP
 * Databases: SQLITE for Dev, MySQL for Prod
@@ -87,6 +88,7 @@ The techincal brief defined a number of tools/techniques/frameworks to employ:
 * Development Language: PYTHON
 * Interface: WEB using HTML
 
+### Frameworks
 To achieve a reliable WEB based, database application using PYTHON, the following frameworks where selected for reliablity and robustness:
 |Frameworks|Description|
 |----------|-----------|
@@ -95,6 +97,7 @@ To achieve a reliable WEB based, database application using PYTHON, the followin
 |WTForms   |WEB Forms Management software|
 |JINGA2    |WEB/PYTHON interaction framework|
 
+### Application Design
 It was desided to keep the application user exprienance as simple as possible, using the same working methodology to all interfaces. The number of interfaces should be mininal, with easy context switching using a standard menu available on each interface screen.
 
 The application included a seperate interface for each data table defined in the ERD. This includes:
@@ -108,10 +111,6 @@ NOTE: the Media Type table is created is not alterable by design, and is populat
 In addition to the interfaces, a simple menu system is included to context switch to each of the screens. The menu is imbedded with the main.html page, which includes a JINGA2 block, inwhich all other html pages are embedded. This approah makes the menu available to all interfaces.
 
 
-
-## Application Deployment Structure
-
-## Database design considerations
 
 ## CD / CI Integration
 
