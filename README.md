@@ -24,7 +24,7 @@ Whilst executing the project:
 * Relational Databases are utilised to store data: SQLITE for Dev, GCP based MySQL for Prod.
 * Documentation had been either created before a task, or appended after the task.
 * Programming best practices have been followed when using PYTHON, FLASH, HTML, JINGA2, etc
-* GITHUB has been used as a code repository: https://github.com/martingtaylor/stine
+* GITHUB has been used as a code repository: [GITHUB](https://github.com/martingtaylor/stine)
 
 ## ERD and Description of the Project
 Following formal meetings with potiental users of STINE, a number of key data elements where identified as useful 
@@ -94,7 +94,7 @@ The techincal brief defined a number of tools/techniques/frameworks to employ:
 To achieve a reliable WEB based, database application using PYTHON, the following frameworks where selected for reliablity and robustness:
 |Frameworks|Description|
 |----------|-----------|
-|SQLAchemny|A PYTHON base interface to backend database layers|
+|SQLAchemy |A PYTHON base interface to backend database layers|
 |FLASK     |WEB Services framework for PYTHON|
 |WTForms   |WEB Forms Management software|
 |JINGA2    |WEB/PYTHON interaction framework|
@@ -115,6 +115,15 @@ In addition to the interfaces, a simple menu system is included to context switc
 The following directory structuer was used to host the application:
 
 ![DIR](https://github.com/martingtaylor/stine/blob/main/STINE_DIR_STRUCTURE.PNG)
+
+### Applcation Execution
+As with most PYTHON WEB application demonstrated - application is invoked by running the app.py, which imports the code from the application directory and if running at main, invokes the __init__.py code. 
+
+The __init__.py loads the base set of imports, setups the environmental variables (containing the connection and secret key strings), and finally runs the routes.py code.
+
+The routes.py is executed on receipt of a WEB requests and drives the application execution.
+
+
 
 
 ## CD / CI Integration
