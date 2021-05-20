@@ -255,6 +255,10 @@ I have included a link to the PYTEST code: [PYTEST.PY CODE](https://github.com/m
 1. When an Album is retrieved to the Album GUI, the Selection drop downs do not change to the appropriate values.
 2. It is possible to save an Album with a blank name.
 
+## Future Enhancement
+1. The all lists should be alphabetically sorted.
+2. The Album display list should include other fields, rather than just the name.
+3. Additional descoped field should be added.
 
 ## Conclusions
 The STINE application does not run as specified, in that the main Album GUI does not refresh the select field items with the correct item when reloading previously saved data. I feek confident that this problem could be solved given more time and experimentation. However, the other tables (Composer, Label and Category) do all demostrate the succesfully perform standard CRUD actions.
