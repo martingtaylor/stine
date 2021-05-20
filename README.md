@@ -9,6 +9,7 @@
 * Risk Assessment
 * Testing
 * Applications screen shots
+* Known Issues
 * Conclusions
 
 
@@ -246,6 +247,10 @@ I have included a link to the PYTEST code: [PYTEST.PY CODE](https://github.com/m
 
 ### Category GUI:
 ![Category Screen](images/STINE_SCREEN_4.PNG)
+
+## Known Issues
+1. When an Album is retrieved to the Album GUI, the Selection drop downs do not change to the appropriate values.
+2. It is possible to save an Album with a blank name.
 
 
 ## Conclusions
