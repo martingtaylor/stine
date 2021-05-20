@@ -59,8 +59,6 @@ As can be seen, the creates a simple star structure with the Albums table in the
 The following ERD diagram shows the originally intended structure:
 ![STINE ERD1](https://github.com/martingtaylor/stine/blob/main/STINE%20ERD.png)
 
-
-
 ### Revision History:
 It should be noted that due to time constraits a number of non-key data items have been dropped from the final implementation.
 These include:
@@ -79,6 +77,19 @@ All these fields can be easily be added to the application, time permitting.
 Removing the unimplemented fields gives a revised ERD diagram:
 ![STINE ERD2](https://github.com/martingtaylor/stine/blob/main/stine2.png)
 
+## Application design description
+Techincal framework was given:
+* Cloud based production system: GCP, MySQL, WEB Interface
+* Development Tools: 
+** PYTHON
+
+* Main Album Table
+* Media Type
+* Category
+* Composer
+* Label
+* HTML Framework
+
 ## Risk Assessment
 An initial Risk Assessment was completed on project commencement:
 ![RISK Assessment](https://github.com/martingtaylor/stine/blob/main/STINE%20Risk%20Assessment.PNG)
@@ -90,13 +101,7 @@ Revision History: Since then the assessment has been revised on a number of occa
 |19/05/2021|2   |Lack of technical Knowledge|Due to lack of techincal knowledge, was unable to default selection boxs to stored values.                                |Very Probable|
 |19/05/2021|5   |System failes User Test    |Due to select fields not default, user testing will fail                                                                  |Very Probable|
 
-## Application design description
-* Main Album Table
-* Media Type
-* Category
-* Composer
-* Label
-* HTML Framework
+
 
 ## Application Deployment Structure
 
