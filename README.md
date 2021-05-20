@@ -129,4 +129,5 @@ Revision History: Since then the assessment has been revised on a number of occa
 ## CD / CI Integration
 
 ## Project Tracking
-The JIRA Project Management tool was used to track and manage the application during the development, testing deployment cycle.
+The JIRA Project Management tool was used to track and manage the application during the development, testing deployment cycle:
+![JIRA](https://github.com/martingtaylor/stine/blob/main/STINE_JIRA.PNG)
