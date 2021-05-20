@@ -9,7 +9,7 @@
             <tr><th>Albums</th></tr>
             {% for a in album_list %}
                 <tr>
-                    <td width=300px><a href="/albumedit/{{ a.id }}">{{ a.name }} {{ a.media_type }} {{ a.number_of_tracks }} {{ a.number_of_disks }}</a></td>
+                    <td width=300px><a href="/albumedit/{{ a.id }}">{{ a.name }}</a></td>
                 </tr>
             </p>
             {% endfor %}
