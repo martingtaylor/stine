@@ -121,7 +121,11 @@ As with most PYTHON WEB application demonstrated - application is invoked by run
 
 The __init__.py loads the base set of imports, setups the environmental variables (containing the connection and secret key strings), and finally runs the routes.py code.
 
-The routes.py is executed on receipt of a WEB requests and drives the application execution.
+The routes.py is executed on receipt of a WEB requests and drives the application execution. The code contains two routines associated with each GUI:
+1. _interface_ route which drives the listing of that table (R - of CRUD) and the addition function (C - of CRUD). This screen contains a hyperlink on each displayed item, which links to the _interface-edit_ route.
+2. _interface-edit_ route appears much like the _interface_ but offers the user the ability to change the selected item (U - of CRUD), or delete (D of CRUD)
+
+
 
 
 
