@@ -185,8 +185,6 @@ The application was developed and deployed using the following CI methodology:
 ### Jenkins Deployment:
 When Jenkins "Build" is invoked:
 
-
-
 1. Jenkins query the user to select on the choice of MYSQL or SQLITE database types and whether to recreate the database.
 ![JENKINSRun](images/STINE_JENKINS_RUN.PNG)
 3. On execution - Jenkins downloads the latest STINE GIT main branch and deploy to a Jenkins Workspace.
@@ -204,6 +202,10 @@ to get around this problem, and I will investigate this issue later.
 The following log was generated once during the Build process:
 
 ![JENKINSBuild](images/STINE_JENKINS_LOG.PNG)
+
+**NOTE:** The following change was made to the Jenkins server to enable the Jenkins user to execute apt commands as sudo
+![JENKINS_SUDO](images/STINE_JENKINS_SUDO.PNG)
+
 
 ## Project Tracking
 The JIRA Project Management tool was used to track and manage the application during the development, testing deployment cycle:
