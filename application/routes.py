@@ -1,5 +1,6 @@
 #from Projects.STINE.application.forms import AlbumForm
 # from Projects.STINE.application.models import media_type
+import re
 from application import app, db
 from flask import Flask, render_template, request, redirect, url_for
 from application.models import album, music_category, media_label, composer, media_type
@@ -7,9 +8,6 @@ from application.forms import AlbumForm, CategoryForm, LabelForm, ComposerForm
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, SelectField
 from wtforms.validators import DataRequired, ValidationError
-
-def tester():
-    return "From tester"
 
 # Albums
 @app.route('/', methods=['GET', 'POST'])
@@ -78,13 +76,20 @@ def albumedit(aid):
         if 'Save' in str(request.form):
             # Save item
             _name = form.name.data       
-            # _mediatype = int(form.mediatype)            
+            _mediatype = int(form.mediatype.data)
+            _composer = int(form.composer.data)
+            _label = int(form.media_label.data)   
+            _category = int(form.music_category.data)         
             _number_of_tracks = int(form.number_of_tracks.data)
             _number_of_disks = int(form.number_of_disks.data)
         
             if db.session.query(album.query.filter(album.id == aid).exists()).scalar():
                 _album = album.query.filter_by(id=aid).first()
                 _album.name = _name
+                _album.media_type = _mediatype
+                _album.composer = _composer                
+                _album.label = _label             
+                _album.category = _category
                 _album.number_of_tracks = str(_number_of_tracks)
                 _album.number_of_disks = str(_number_of_disks)
                 db.session.commit()
@@ -262,6 +267,7 @@ def categoryedit(cid):
             error = "Unable to locate CID " + cid
 
     if request.method == "POST":
+        print(">>>>", str(request.form))
         if 'Save' in str(request.form):
             # Save item
             desc = form.description.data
