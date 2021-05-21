@@ -8,16 +8,19 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, SelectField
 from wtforms.validators import DataRequired, ValidationError
 
+def tester():
+    return "From tester"
 
 # Albums
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
 def _album():
     error = ""
-    all_albums = album.query.all()
+    # all_albums = album.query.all()
+    all_albums = db.session.query(album,composer,media_type,media_label,music_category).filter(composer.id==album.composer).filter(album.media_type==media_type.id).filter(album.label==media_label.id).filter(album.category==music_category.id).order_by(album.name).all()
+
     form = AlbumForm()
 
-    print(">>>", request.method)
     if request.method == "POST":
         _name       = form.name.data
         _media_type = int(form.mediatype.data)
@@ -26,9 +29,7 @@ def _album():
         _category   = int(form.music_category.data)
         _numtracks  = form.number_of_tracks.data
         _numdisks   = form.number_of_disks.data
-
-        # print(">>>>", name, media_type, composer, label, category, numtracks, numdisks)
-        
+       
         _album = album( name=_name, 
                         media_type=_media_type,
                         composer=_composer,
@@ -36,24 +37,23 @@ def _album():
                         label=_label,
                         number_of_tracks=_numtracks,
                         number_of_disks=_numdisks)
-        '''
-        _album = album( _name, 
-                        =_numtracks,
-                        number_of_disks=_numdisks)
-        '''
-        # name=_name, media_type=int(_media_type)) #, category=_category, composer=_composer, label=_label)
+
         db.session.add(_album)
         db.session.commit()
 
         form.name.name = ""
-        all_albums = album.query.all()
+        # all_albums = album.query.all()
+        all_albums = db.session.query(album,composer,media_type,media_label,music_category).filter(composer.id==album.composer).filter(album.media_type==media_type.id).filter(album.label==media_label.id).filter(album.category==music_category.id).order_by(album.name).all()
 
     return render_template('album.html', form=form, album_list=all_albums)
     
 @app.route('/albumedit/<aid>', methods=['GET', 'POST'])
 def albumedit(aid):
     error = ""
-    all_albums=album.query.all()
+    # all_albums=album.query.all()
+    all_albums = db.session.query(album,composer,media_type,media_label,music_category).filter(composer.id==album.composer).filter(album.media_type==media_type.id).filter(album.label==media_label.id).filter(album.category==music_category.id).order_by(album.name).all()
+
+
     form = AlbumForm()
 
     #if form.validate_on_submit():
@@ -68,7 +68,7 @@ def albumedit(aid):
             _numoftracks = (_album.number_of_tracks)
             _numofdisks = (_album.number_of_disks)
             form.name.data = _name
-            form.mediatype.default = "Vinyl"
+            # form.mediatype.id.id = 1
             form.number_of_tracks.data = _numoftracks
             form.number_of_disks.data = _numofdisks
         else:
@@ -78,6 +78,7 @@ def albumedit(aid):
         if 'Save' in str(request.form):
             # Save item
             _name = form.name.data       
+            # _mediatype = int(form.mediatype)            
             _number_of_tracks = int(form.number_of_tracks.data)
             _number_of_disks = int(form.number_of_disks.data)
         
