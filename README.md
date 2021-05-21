@@ -231,7 +231,7 @@ Revision History: Since then the assessment has been revised on a number of occa
 
 ## Testing
 ### Unit Tesing:
-Created a series of PYTEST / FLASK unit tests that exercised both GET and POST for each main and edit routes. All screens are tested by looking for dummy data (for example the Composers table contains a single entry "Test Composer", the labels "Test Label", the Catergories "Test Category") created after the test routine starts, that is being returned by a call to either the full list, or the via the id supplied. All test looks for a 200 return code (got the WEB page back successfully) and the presents of the expect text.
+Created a series of PYTEST / FLASK unit tests that exercised both GET and POST for each main and edit routes. All GUIs are tested by looking for dummy data (for example the Composers table contains a single entry "Test Composer", the labels "Test Label", the Catergories "Test Category") created after the test routine starts, that is being returned by a call to either the full list, or the via the id supplied. All test looks for a 200 return code (got the WEB page back successfully) and the presents of the expect text.
 
 Happy to say we achieve an overal coverage of 72%
 ![PYTEST_RESULTS](images/STINE_PYTEST.PNG)
@@ -249,7 +249,10 @@ Lines 123, 140, 182, 200, 242, 260 - Are all related to Error reports, and requi
 The others relate to POST Updates and Deletes, which haven't yet been tested.
 
 
-### System Intergration Testing:
+### System Integration Testing:
+Created an integration script to exercise:
+* The WEB GUI menues
+* Creating new Categories, Labels, Composers
 
 ![PYTEST INT RESULTS](images/STINE_INT_PYTEST.PNG)
 
