@@ -6,10 +6,16 @@
             {{ form.hidden_tag() }}
 
             <table border=1>
-            <tr><th>Albums</th></tr>
+                <tr><th>Album</th><th>Composer</th><th>Media Type</th><th>Label</th><th>Category</th><th>Tracks</th><th>Disks</th></tr>
             {% for a in album_list %}
                 <tr>
-                    <td width=300px><a href="/albumedit/{{ a.id }}">{{ a.name }}</a></td>
+                    <td width=300px><a href="/albumedit/{{ a.album.id }}">{{ a.album.name }}</a></td>
+                    <td width=300px>{{ a.composer.name }}</td>
+                    <td width=80px>{{ a.media_type.description }}</td>                    
+                    <td width=80px>{{ a.media_label.name }}</td>    
+                    <td width=80px>{{ a.music_category.description }}</td>  
+                    <td width=80px>{{ a.album.number_of_tracks }}</td>  
+                    <td width=80px>{{ a.album.number_of_disks }}</td>                          
                 </tr>
             </p>
             {% endfor %}
