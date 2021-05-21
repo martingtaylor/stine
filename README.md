@@ -101,6 +101,8 @@ To achieve a reliable WEB based, database application using PYTHON, the followin
 |FLASK     |WEB Services framework for PYTHON|
 |WTForms   |WEB Forms Management software|
 |JINGA2    |WEB/PYTHON interaction framework|
+|PYTEST    |Unit Test Framework|
+|SELENIUM  |WEB GUI Manipulation utility|
 
 ### Application Design
 It was desided to keep the application user exprienance as simple as possible, using the same working methodology to all interfaces. The number of interfaces should be mininal, with easy context switching using a standard menu available on each interface screen.
