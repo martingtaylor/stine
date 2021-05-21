@@ -253,7 +253,11 @@ The others relate to POST Updates and Deletes, which haven't yet been tested.
 Created an integration script to exercise:
 * The WEB GUI menues
 * Creating new Categories, Labels, Composers
-The test script can be viewed at [PYTEST INT]()
+
+The test script can be viewed at [PYTEST INT](https://github.com/martingtaylor/stine/blob/main/test_int.py)
+
+When run, the routines covered 32% of the application.
+
 ![PYTEST INT RESULTS](images/STINE_INT_PYTEST.PNG)
 
 ## Application Screen Shots
