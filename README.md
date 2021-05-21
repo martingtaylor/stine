@@ -237,6 +237,13 @@ Happy to say we achieve an overal coverage of 72%
 
 I have included a link to the PYTEST code: [PYTEST.PY CODE](https://github.com/martingtaylor/stine/blob/main/test_app.py)
 
+### Anaylist of Coverage
+I then ran the pytest **--cov=app --cov-report=term-missing** to find the code that had been missed:
+|Code|Stmts|Miss|Cover|Missing|
+|----|-----|----|-----|-------|
+|application\routes.py|198|76|62%|12, 25-46, 75, 80-93, 97-103, 125, 142, 147-154, 158-164, 184, 202, 207-214, 218-224, 244, 262, 267-274, 278-284|
+
+
 ## Application Screen Shots
 
 ### Album GUI:
