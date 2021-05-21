@@ -260,6 +260,9 @@ When run, the routines covered 32% of the application.
 
 ![PYTEST INT RESULTS](images/STINE_INT_PYTEST.PNG)
 
+**NOTE:** Unfortunately I ran out of time to continue writing testing scripts. Hopefully these can be added soon.
+
+
 ## Application Screen Shots
 
 ### Album GUI:
@@ -280,8 +283,7 @@ When run, the routines covered 32% of the application.
 
 ## Future Enhancement
 1. The all lists should be alphabetically sorted.
-2. The Album display list should include other fields, rather than just the name.
-3. Additional descoped field should be added.
+2. Additional descoped field should be added.
 
 ## Conclusions
 The STINE application does not run as specified, in that the main Album GUI does not refresh the select field items with the correct item when reloading previously saved data. I feek confident that this problem could be solved given more time and experimentation. However, the other tables (Composer, Label and Category) do all demostrate the succesfully perform standard CRUD actions.
