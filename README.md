@@ -191,9 +191,11 @@ The application was developed and deployed using the following CI methodology:
 ### Jenkins Deployment:
 
 To deploy the STINE app.
-1. Log into the Jenkins server and freom the dashboard, select the STINE work flow.
-2. Select the Jenkins "Build with Parameters":
+1. Log into the Jenkins server and from the dashboard, select the STINE work flow.
+2. From the STINE dashboard, select the menu option **Build with Parameters**:
+
 ![JENKINSRun](images/STINE_JENKINS_RUN.PNG)
+
 3. Jenkins query the user to select on the choice of MYSQL or SQLITE database types and whether to recreate the database.
 4. On execution - Jenkins downloads the latest STINE GIT main branch and deploy to a Jenkins Workspace.
 5. Set the Database connection string (based on the choice made above) and store to an environmental variable.
