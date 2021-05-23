@@ -19,14 +19,14 @@ allowes audiophile to record basic information on their audio collection. The pr
 of interest, and based of these requirements design a simple/easy to use GUI and underlying database structure.
 
 ## Techincal Elements
-Whilst executing the project:
-* User stories where created and managed on the JIRA platform
+The following techinal elements where considered whilst executing the design:
+* User stories will be created and managed on the JIRA platform
 * The User Interface will be a WEB front end.
 * The Application will be designed and deployed as a WEB/Cloud bassed system.
 * Relational Databases are utilised to store data: SQLITE for Dev, GCP based MySQL for Prod.
 * Documentation had been either created before a task, or appended after the task.
-* Programming best practices have been followed when using PYTHON, FLASH, HTML, JINGA2, etc
-* GITHUB has been used as a code repository: [GITHUB](https://github.com/martingtaylor/stine)
+* Programming best practices have been followed when using PYTHON, FLASH, HTML, JINGA2, etc.
+* GITHUB has been used as a code repository: [Link to STINE GITHUB](https://github.com/martingtaylor/stine)
 
 ## ERD and Description of the Project
 Following formal meetings with potiental users of STINE, a number of key data elements where identified as useful 
@@ -45,7 +45,7 @@ to a collector of audio media, these included:
 * Duration
 * Digital/Analog
 
-Following normalisation, the data elements where grouped in a number of seperate tables:
+The data items where group into functional areas, and following a normalisation process, into a number of seperate tables:
 * ALBUM - the central table contain either base data or links to other tables.
 * COMPOSERS - A table containing the names of individual composers. 
 * MEDIA_TYPES - A list of the basic media types: C.D., Vinyl, Digit. This table is considered non changing.
@@ -65,8 +65,11 @@ As can be seen, the creates a simple star structure with the Albums table in the
 The following ERD diagram shows the originally intended structure:
 ![STINE ERD1](https://github.com/martingtaylor/stine/blob/main/STINE%20ERD.png)
 
+**NOTE:** The design of each table includes an auto-generated integer, which acts as the primary key, plus a "relationship" back to the central Album table.
+The Album table it's self contains the reciprocal foreign key defintion back to the child tables.
+
 ### Revision History:
-It should be noted that due to time constraits a number of non-key data items have been dropped from the final implementation.
+It should be noted that due to time constraits a number of non-key data items have been dropped from the initial implementation.
 
 These include:
 |Drop Field          |
@@ -104,12 +107,12 @@ To achieve a reliable WEB based, database application using PYTHON, the followin
 |PYTEST    |Unit Test Framework - for Unit and Integration testing|
 |SELENIUM  |WEB GUI Manipulation utility - used for System Integration testing|
 
-### Application Componments Design
-It was desided to keep the application user exprienance as simple as possible, using the same working methodology for all GUI interfaces. The number of interfaces should be mininal, with easy context switching using a standard menu available on each interface screen.
+### Application User Experience (GUI) Design
+It was desided to keep the application user experience as simple as possible, using the same working methodology for all screens. The number of interfaces should be mininal, with easy context switching using a standard menu available on each interface screen.
 
 The application included a seperate interface for each data table defined in the ERD. This includes:
-* The main Album
-* The music category
+* The Main Album
+* The Music Category
 * The Composer
 * The Pusblisher Labels
 
@@ -119,16 +122,28 @@ NOTE: the Media Type table is created is not alterable by design, and is populat
 
 In addition to the interfaces, a simple menu system is included to context switch to each of the screens. The menu is imbedded with the main.html page, which includes a JINGA2 block, inwhich all other html pages are embedded. This approah makes the menu available to all interfaces.
 
-The following directory structuer was used to host the application:
+
+### Application Development
+The following directory structuer was used to host the application during development:
 
 ![DIR](images/STINE_DIR_STRUCTURE.PNG)
 
+Development followed the formal process:
+1. User Stories created in JIRA in the "ToDo" state, and moved to in "In Progess" as appropriate.
+2. PYTHON application code was created in Microsoft Visual Studio.
+3. Major changes to the code committed to GITHUB on a regular basis, or as major changes where made.
+4. Items where unit tested - initial by hand and later by using PYTEST.
+5. Initial development used an SQLITE database.
+6. When a user story was complete, the JIRA ticket was moved to "Done" status.
+7. JENKIN was used to deploy the application from source to a Workspace on the JENKINS server and connected to a GCP bases MySQL database.
+8. Some Integration testing was run from the JENKINS server.
+
 ### Applcation Execution
-As with most PYTHON WEB application demonstrated - application is invoked by running the app.py, which imports the code from the application directory and if running at main, invokes the __init__.py code. 
+The application is invoked by running the **app.py**, which imports the code from the application directory and if running at main, invokes the **__init__.py** code. 
 
-The __init__.py loads the base set of imports, setups the environmental variables (containing the connection and secret key strings), and finally runs the routes.py code.
+The **__init__.py** loads the base set of imports, setups the environmental variables (containing the connection and secret key strings), and finally runs the routes.py code.
 
-The routes.py is executed on receipt of a WEB requests and drives the application execution. The code contains two routines associated with each GUI:
+The **routes.py** is executed on receipt of a WEB requests and drives the application execution. The code contains two routines associated with each GUI:
 1. _interface_ route which drives the listing of that table (R - of CRUD) and the addition function (C - of CRUD). This screen contains a hyperlink on each displayed item, which links to the _interface-edit_ route.
 2. _interface-edit_ route appears much like the _interface_ but offers the user the ability to change the selected item (U - of CRUD), or delete (D of CRUD)
 
@@ -176,12 +191,10 @@ All Routes for Read/Add function is the same manner, as do all Update/Deletes.
 
 
 
-
-
 ## CD / CI Integration
 ### Development Cycle:
 The application was developed and deployed using the following CI methodology:
-1. A public GITHUB repository was created for the STINE account containing this README.md
+1. A public GITHUB repository was created for the STINE project containing this all application code, a sample database and all documentation including this README.md
 2. The repository was cloned to the development PC.
 3. Microsoft Visual Studio Code 1.56 was connected to the STINE GIT repository.
 4. During the development cycle, regular commits where made to the main branch repo.
@@ -216,14 +229,17 @@ The following log was generated once during the Build process:
 
 ![JENKINSBuild](images/STINE_JENKINS_LOG.PNG)
 
-**NOTE:** The following change was made to the Jenkins server to enable the Jenkins user to execute apt commands as sudo
+**NOTE:** The following change was made to the Jenkins server to enable the Jenkins user to execute apt commands as sudo:
 ![JENKINS_SUDO](images/STINE_JENKINS_SUDO.PNG)
 
 
 ## Project Tracking
 The JIRA Project Management tool was used to track and manage the application during the development, testing deployment cycle:
 ![JIRA](https://github.com/martingtaylor/stine/blob/main/STINE_JIRA.PNG)
-The JIRA configuration allows:
+
+**NOTE:** The above graphicd may not be an accurate reflection of the curreny JIRA tickets.
+
+The current JIRA configuration allows:
 * Management of the "To-Do list" - user stories, summarising "Who Wants", "What they Want" and "What they except"
 * The "In progress" - containing items currently being worked on, or blocked items.
 * The "Done List" - Items that have been completed and tested, or approved.
@@ -234,7 +250,7 @@ An initial Risk Assessment was completed on project commencement:
 ![RISK Assessment](https://github.com/martingtaylor/stine/blob/main/STINE%20Risk%20Assessment.PNG)
 
 
-Revision History: Since then the assessment has been revised on a number of occassions:
+###Revision History:### Since then the assessment has been revised on a number of occassions:
 |Date      |Item|Title                      |Description|New Likihood|
 |----------|----|---------------------------|-----------|------------|
 |03/05/2021|4   |Legal Constraints          |As the system was for private and non profit use only and does not contain actual audio media data, this can be dismissed.|Dissmed|
