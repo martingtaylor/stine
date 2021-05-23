@@ -237,7 +237,7 @@ The following log was generated once during the Build process:
 The JIRA Project Management tool was used to track and manage the application during the development, testing deployment cycle:
 ![JIRA](https://github.com/martingtaylor/stine/blob/main/STINE_JIRA.PNG)
 
-**NOTE:** The above graphicd may not be an accurate reflection of the curreny JIRA tickets.
+**NOTE:** The above graphic may not be an accurate reflection of the curreny JIRA tickets.
 
 The current JIRA configuration allows:
 * Management of the "To-Do list" - user stories, summarising "Who Wants", "What they Want" and "What they except"
