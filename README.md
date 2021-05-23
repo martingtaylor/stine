@@ -104,8 +104,8 @@ To achieve a reliable WEB based, database application using PYTHON, the followin
 |PYTEST    |Unit Test Framework|
 |SELENIUM  |WEB GUI Manipulation utility|
 
-### Application Design
-It was desided to keep the application user exprienance as simple as possible, using the same working methodology to all interfaces. The number of interfaces should be mininal, with easy context switching using a standard menu available on each interface screen.
+### Application Componments Design
+It was desided to keep the application user exprienance as simple as possible, using the same working methodology for all GUI interfaces. The number of interfaces should be mininal, with easy context switching using a standard menu available on each interface screen.
 
 The application included a seperate interface for each data table defined in the ERD. This includes:
 * The main Album
