@@ -113,6 +113,8 @@ The application included a seperate interface for each data table defined in the
 * The Composer
 * The Pusblisher Labels
 
+![STINE Overview](images/STINE_Overview.png)
+
 NOTE: the Media Type table is created is not alterable by design, and is populated when the database is deployed.
 
 In addition to the interfaces, a simple menu system is included to context switch to each of the screens. The menu is imbedded with the main.html page, which includes a JINGA2 block, inwhich all other html pages are embedded. This approah makes the menu available to all interfaces.
