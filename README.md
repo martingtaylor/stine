@@ -250,7 +250,7 @@ An initial Risk Assessment was completed on project commencement:
 ![RISK Assessment](https://github.com/martingtaylor/stine/blob/main/STINE%20Risk%20Assessment.PNG)
 
 
-###Revision History:
+### Revision History:
 The Risk Assessment has been revised on a number of occassions:
 |Date      |Item|Title                      |Description|New Likihood|
 |----------|----|---------------------------|-----------|------------|
