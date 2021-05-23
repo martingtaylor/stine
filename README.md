@@ -269,9 +269,18 @@ Created an integration script to exercise:
 
 The test script can be viewed at [PYTEST INT](https://github.com/martingtaylor/stine/blob/main/test_int.py)
 
-When run, the routines covered 32% of the application.
+When run, the routines covered 33% of the application.
 
 ![PYTEST INT RESULTS](images/STINE_INT_PYTEST.PNG)
+
+#### Analist of Coverage
+|Code|Stmts|Miss|Cover|Missing|
+|----|-----|----|-----|-------|
+|application/forms.py|36|5|86%|25-29|
+|application/routes.py|188|172|9%| 15-45, 49-102, 109-124, 128-162, 168-183, 188-222, 228-243, 248-282|
+
+The forms.py lines 25-29 relate to the automatic population of the music_category table, and is called when that table is build. I am currently unsure how to checl this code.
+The route.py lines all relate to the same POST/DELETE test, which occure on pages that are indirectly called from a main page. I am yet unsure how to invoke these pages.
 
 **NOTE:** Unfortunately I ran out of time to continue writing testing scripts. Hopefully these can be added soon.
 
@@ -293,9 +302,10 @@ When run, the routines covered 32% of the application.
 ## Known Issues
 1. When an Album is retrieved to the Album GUI, the Selection drop downs do not change to the appropriate values.
 2. It is possible to save an Album with a blank name.
+3. Unit and Integration tests are not complete.
 
 ## Future Enhancement
-1. The all lists should be alphabetically sorted.
+1. Complete the Unit and System Integration test.
 2. Additional descoped field should be added.
 
 ## Conclusions
