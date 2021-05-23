@@ -97,12 +97,12 @@ The techincal brief defined a number of tools/techniques/frameworks to employ on
 To achieve a reliable WEB based, database application using PYTHON, the following frameworks where selected for reliablity and robustness:
 |Frameworks|Description|
 |----------|-----------|
-|SQLAchemy |A PYTHON base interface to backend database layers|
-|FLASK     |WEB Services framework for PYTHON|
-|WTForms   |WEB Forms Management software|
-|JINGA2    |WEB/PYTHON interaction framework|
-|PYTEST    |Unit Test Framework|
-|SELENIUM  |WEB GUI Manipulation utility|
+|SQLAchemy |PYTHON base interface to backend database layers|
+|FLASK     |PYTHON WEB Services framework for PYTHON|
+|WTForms   |PYTHON WEB Forms Management software|
+|JINGA2    |PYTHON / WUB Page interaction framework|
+|PYTEST    |Unit Test Framework - for Unit and Integration testing|
+|SELENIUM  |WEB GUI Manipulation utility - used for System Integration testing|
 
 ### Application Componments Design
 It was desided to keep the application user exprienance as simple as possible, using the same working methodology for all GUI interfaces. The number of interfaces should be mininal, with easy context switching using a standard menu available on each interface screen.
