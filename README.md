@@ -186,6 +186,8 @@ The application was developed and deployed using the following CI methodology:
 3. Microsoft Visual Studio Code 1.56 was connected to the STINE GIT repository.
 4. During the development cycle, regular commits where made to the main branch repo.
 
+![STINE CDCI Overview](images/STINE_CDCI_OVERVIEW.PNG)
+
 ### Jenkins Deployment:
 When Jenkins "Build" is invoked:
 
