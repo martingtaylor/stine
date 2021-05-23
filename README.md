@@ -204,16 +204,14 @@ To deploy the STINE app.
 
 4. On execution - Jenkins downloads the latest STINE GIT main branch and deploy to a Jenkins Workspace.
 5. Set the Database connection string (based on the choice made above) and store to an environmental variable.
-
-**NOTE:** It should be noted that 3 lines in the build relating to the installation (requirements, pymysql, gunicorn) have been
-commented out. This was due to these items crashing the build process. These items where installed on the command line using sudo
-to get around this problem, and I will investigate this issue later.
-
 6. Check the **CREATEDB** environmental variable, and if set to true, run the **CREATE.PY** program to drop and recreate the database on the selected database.
 7. Invoke the **GUNICORN** WEB Host and execute the application.
 
 ![JENKINSBuild](images/STINE_JENKINS_BUILD.PNG)
 
+**NOTE:** It should be noted that 3 lines in the build relating to the installation (requirements, pymysql, gunicorn) have been
+commented out. This was due to these items crashing the build process. These items where installed on the command line using sudo
+to get around this problem, and I will investigate this issue later.
 The following log was generated once during the Build process:
 
 ![JENKINSBuild](images/STINE_JENKINS_LOG.PNG)
