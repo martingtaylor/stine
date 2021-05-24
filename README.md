@@ -327,6 +327,8 @@ The route.py lines all relate to the same POST/DELETE test, which occure on page
 3. Refactor the edit page back into the main page to form one html and route per table.
 4. Make the delete button appearance controlled by JINGA2.
 5. Refactor the POST and DELETE routes code.
+6. Catch relationship violations, such as deleting a composer from the compose table when it is still being used by the album table. This currently just raises a standard error and abort with an ugly error message. The app should capture this error properly.
+
 
 ## Conclusions
 The STINE application does not run as specified, in that the main Album GUI does not refresh the select field items with the correct item when reloading previously saved data. I feek confident that this problem could be solved given more time and experimentation. However, the other tables (Composer, Label and Category) do all demostrate the succesfully perform standard CRUD actions.
